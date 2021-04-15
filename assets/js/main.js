@@ -313,10 +313,7 @@
 							);
 						});
 			
-					// Banner.
-						$banner._slider(settings.banner);
-			
-					// Menu.
+					
 						$('#menu')
 							.append('<a href="#menu" class="close"></a>')
 							.appendTo($body)

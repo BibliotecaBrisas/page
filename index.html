@@ -8,7 +8,7 @@
 
 <head>
 	<title>Dopetrope by HTML5 UP</title>
-	<link  rel="icon"   href="images/banner.ico" />
+	<link rel="icon" href="images/banner.ico" />
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 
-<body>
+<body onload="">
 	<div class="geral-div-boddy">
 		<div>
 
@@ -28,7 +28,7 @@
 				<!-- Logo -->
 				<div class="row" id="borde">
 					<div class="col s3"></div>
-					<div class="col s6 z-depth-5 namePage" >
+					<div class="col s6 z-depth-5 namePage">
 						<h1><a href="index.html">Biblioteca comunitaria Brisas del Norte</a></h1>
 					</div>
 					<div class="col s3"></div>
@@ -44,11 +44,11 @@
 							<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
 									class="material-icons">menu</i></a>
 							<ul class=" hide-on-med-and-down">
-								<li><a href="historia.html">Historia</a></li>
-								<li><a href="badges.html">Servicios</a></li>
-								<li><a href="badges.html">Inicio</a></li>
-								<li><a href="collapsible.html">Comunidad</a></li>
-								<li><a href="mobile.html">Galeria</a></li>
+								<li><a href="historia.html" class="fontOfNav">Historia</a></li>
+								<li><a href="servicios.html" class="fontOfNav">Servicios</a></li>
+								<li><a href="badges.html" class="fontOfNav">Inicio</a></li>
+								<li><a href="collapsible.html" class="fontOfNav">Comunidad</a></li>
+								<li><a href="mobile.html" class="fontOfNav">Galeria</a></li>
 							</ul>
 						</div>
 					</nav>
@@ -69,73 +69,113 @@
 		<!-- Banner -->
 		<div class="container "></div>
 
-		<div class="slider">
-			<ul class="slides">
-				<li>
-					<img src="images/imgUno.jpg"> <!-- random image -->
-					<div class="caption center-align">
-						<h3>Un paso hacia la creatividad</h3>
-						<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-					</div>
-				</li>
-				<li>
-					<img src="images/imgDos.jpg"> <!-- random image -->
-					<div class="caption left-align">
-						<h3>Solo basta con Querer hacerlo</h3>
-						<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-					</div>
-				</li>
-				<li>
-					<img src="images/imgTres.jpg"> <!-- random image -->`
-					<div class="caption right-align">
-						<h3>Impactos</h3>
-						<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-					</div>
-				</li>
-				<li>
-					<img src="images/imgCuatro.jpg"> <!-- random image -->
-					<div class="caption center-align">
-						<h3>Noticias</h3>
-						<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-					</div>
-				</li>
-			</ul>
+		<div class="container ">
+			<div class="slider">
+				<ul class="slides" id="containerBanner">
+					<li id="estructureCard">
+						<img src="images/imgUno.jpg" id="imagen"> <!-- random image -->
+						<div class="caption center-align">
+							<h3 id="titulo">Un paso hacia la creatividad</h3>
+							<h5 class="light grey-text text-lighten-3" id="descripcion">Here's our small slogan.</h5>
+						</div>
+					</li>	
+				</ul>
+			</div>
 		</div>
 
 		<div class="container section"></div>
 
 		<!-- Intro -->
+		<!-- Modal Trigger -->
 
 		<div class="container">
 			<div class="section ">
 				<div class="row ">
-					<div class="col s4  center buttons-center"><a href=""
-							class="btn-small hoverable tree-buttons blue">Programas</a></div>
-					<div class="col s4  center buttons-center "><a href=""
-							class="btn-small hoverable tree-buttons blue">Coleccion</a></div>
-					<div class="col s4  center buttons-center"><a href=""
-							class="btn-small hoverable tree-buttons blue">Apoyanos</a></div>
+					<div class="col s4  center buttons-center"><a href="#modal1"
+							class="waves-effect waves-light button large modal-trigger blue tree-buttons hoverable">Programas</a>
+					</div>
+					<div class="col s4  center buttons-center "><a href="#modal2"
+							class="waves-effect waves-light button large modal-trigger blue tree-buttons hoverable">Coleccion</a>
+					</div>
+					<div class="col s4  center buttons-center"><a href="#modal3"
+							class="waves-effect waves-light button large modal-trigger blue tree-buttons hoverable">Apoyanos</a>
+					</div>
 
 				</div>
 			</div>
 
 		</div>
 
+		<!-- Modal Structure -->
+		<div id="modal1" class="modal modal-fixed-footer">
+			<!-- Modal Programas -->
+			<div class="modal-content">
+				<h4>Nuestros Programas</h4>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium deserunt, hic ipsa enim esse
+					illo odit praesentium, repellendus inventore laudantium doloremque, deleniti quo laborum maiores
+					temporibus quis dolorum beatae ratione.</p>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo</a>
+			</div>
+		</div>
+
+		<div id="modal2" class="modal modal-fixed-footer">
+			<!-- Modal coleccion -->
+			<div class="modal-content">
+				<h4>Nuestros Programas 2</h4>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium deserunt, hic ipsa enim esse
+					illo odit praesentium, repellendus inventore laudantium doloremque, deleniti quo laborum maiores
+					temporibus quis dolorum beatae ratione.</p>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo</a>
+			</div>
+		</div>
+
+		<div id="modal3" class="modal modal-fixed-footer">
+			<!-- Modal Apoyanos -->
+			<div class="modal-content">
+				<div class="row section">
+					<div class="col s12">
+						<h4></h4>
+						<h4>Tu aporte nos mueve</h4>
+						<p>Para nosostros es de gran importancia el que puedas apoyarnos, para esto tenemos dos formas
+							en
+							las
+							que
+							puedes hacerlo ya sea por medio de recursos o de igual forma con material intelectual.</p>
+					</div>
+
+					<div class="col s6 center">
+						<a href="" class="button large">Dona Un Libro</a>
+					</div>
+					<div class="col s6 center">
+						<a href="" class="button large">Dona Tu Talento</a>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo</a>
+			</div>
+		</div>
+
+
+
 		<div class="container section">
 			<div class="row">
 				<div class="col s12">
 					<div class="card">
-						<div class="card-content">
+						<div class="card-content z-depth-2">
 							<div class="row valign-wrapper">
 								<div class="col s8">
-									<h3>Quienes Somos</h3>
+									<h3 class="titliOfCards">Quienes Somos</h3>
 
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dicta
-										pariatur officiis accusamus saepe, ullam odio, molestias corporis necessitatibus
-										soluta alias consectetur consequuntur dolor voluptates neque nulla itaque quia?
-										Assumenda? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero ea
-										dicta deserunt vel, ad provident ducimus odit cumque doloribus, earum commodi
-										quis adipisci maxime quisquam optio soluta mollitia, aliquam magnam.</p>
+									<p>Somos una biblioteca comunitaria sin animo de lucro, la cual, apuesta al
+										desarrollo y bienestar social para la comunidad del barrio Brisas Del Norte y
+										sus alrededores; Somos mas que una biblioteca, somos un organismo viviente que a
+										traves de sus programas, actividades y estrategias conectamos a la comunidad con
+										su biblioteca. </p>
 								</div>
 								<div class="col s4 cardUno">
 									<img class="responsive-img" src="images/banner5.jpeg" alt="">
@@ -149,27 +189,21 @@
 
 		</div>
 		<div class="container center">
-			<h2> Nuestros Colaboradores</h2>
+			<h2 class="titliOfCards"> Actividad Destacada del Mes</h2>
 		</div>
 
 
 		<div class="container section">
 			<div class="slider" id="slider2">
-				<ul class="slides">
-					<li>
-						<img src="images/karina-fondo-textura1.jpg"> <!-- random image -->
+				<ul class="slides" id="containerBanner2">
+					<li id="estructureCard-2">
+						<img src="images/karina-fondo-textura1.jpg" id="imagen"> <!-- random image -->
 						<div class="caption center-align">
-							<h3>David</h3>
-							<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+							<h3 id="titulo">La hora del cuento</h3>
+							<h5 class="light grey-text text-lighten-3" id="descripcion">Here's our small slogan.</h5>
 						</div>
 					</li>
-					<li>
-						<img src="images/unnamed.jpg"> <!-- random image -->
-						<div class="caption left-align">
-							<h3>Julio</h3>
-							<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-						</div>
-					</li>
+					
 				</ul>
 			</div>
 			<hr>
@@ -178,12 +212,13 @@
 
 		<div class="container ">
 			<div class="card">
-				<div class="card-content">
+				<div class="card-content z-depth-2">
 					<div class="row valign-wrapper section">
 						<div class="col s8 ">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam molestiae excepturi
-								mollitia consequuntur ea porro odit natus impedit, quo totam modi blanditiis, sit sint
-								eius dicta corporis repudiandae autem beatae Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias ratione porro, temporibus totam dolores ipsum sit nemo rerum doloremque impedit esse ducimus perspiciatis neque libero natus accusamus incidunt. Labore.</p>
+							<p>Su principal objetivo es transformar a la biblioteca Brisas Del Norte en un modelo
+								autosuficiente que permita, no solo el mejoramiento ed su porafolio de servicios, sino,
+								tambien alcanzar un impacto progresivo y permanente en su comunidad, a traves de
+								losprocesos y programas implementados. </p>
 						</div>
 						<div class="col s4">
 							<h2 class="titleObjetiv">OBJETIVOS <br> 2021 </h2>
@@ -258,6 +293,7 @@
 
 
 		<!-- Scripts -->
+		<script src="assets/js/configureIndex.js"></script>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.dropotron.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>
@@ -269,9 +305,10 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 
-
+		
 		<script>
-			document.addEventListener('DOMContentLoaded', function () {
+			document.addEventListener('DOMContentLoaded',async function () {
+				await inicio();
 				var elems = document.querySelectorAll('.slider');
 				var instances = M.Slider.init(elems);
 
@@ -285,6 +322,7 @@
 
 			});
 		</script>
+		
 
 	</div>
 

@@ -110,7 +110,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #c0baba;
+		background: #ffffff;
 		
 	}
 
@@ -1669,6 +1669,15 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
+.fontOfNav{
+	font-weight: 700;
+	font-size: 1.1em;
+}
+
+.titliOfCards{
+	font-weight: 700;	
+}
+
 /* Button */
 
 	input[type="button"],
@@ -2162,7 +2171,6 @@ input, select, textarea {
 			top: 0;
 			left: 0;
 			width: 100%;
-			background: url("images/bg01.png");
 			background-size: 100% 100%;
 			z-index: 0;
 			opacity: 0.5;
