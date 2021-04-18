@@ -7,7 +7,7 @@ var configuracionBar2 = [];
 async function inicio() {
 
     let formData = new FormData();
-    formData.append("codigoClienteToSearch", "test");
+    formData.append("codigoClienteToSearch", "BibliotecaBrisas");
  
     let dataInfo = {
        method: 'POST', // or 'PUT'
