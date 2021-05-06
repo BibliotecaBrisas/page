@@ -97,6 +97,13 @@ input, select, textarea {
 	margin-top: 20px;
 	
 }
+#programSection{
+	
+    position: relative;
+    height: 100%;
+    width: 100%;
+	
+}
 
 
 
