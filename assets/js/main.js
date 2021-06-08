@@ -9,6 +9,15 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
+function Acordionfuncion(id) {
+	var x = document.getElementById(id);
+	if (x.className.indexOf("w3-show") == -1) {
+	  x.className += " w3-show";
+	} else {
+	  x.className = x.className.replace(" w3-show", "");
+	}
+  }
+
 var slideIndex = 1;
 showSlides(slideIndex);
 

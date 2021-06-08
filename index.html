@@ -91,13 +91,13 @@
 			<div class="section ">
 				<div class="row ">
 					<div class="col s4  center buttons-center"><a href="#modal1"
-							class="waves-effect waves-light button large modal-trigger blue tree-buttons hoverable">Programas</a>
+							class="waves-effect waves-light button large modal-trigger  tree-buttons hoverable">Programas</a>
 					</div>
 					<div class="col s4  center buttons-center "><a href="#modal2"
-							class="waves-effect waves-light button large modal-trigger blue tree-buttons hoverable ">Coleccion</a>
+							class="waves-effect waves-light button large modal-trigger  tree-buttons hoverable ">Coleccion</a>
 					</div>
 					<div class="col s4  center buttons-center"><a href="#modal3"
-							class="waves-effect waves-light button large modal-trigger blue tree-buttons hoverable ">¿Como
+							class="waves-effect waves-light button large modal-trigger  tree-buttons hoverable ">¿Como
 							puedes apoyarnos?</a>
 					</div>
 
@@ -123,10 +123,8 @@
 		<div id="modal2" class="modal modal-fixed-footer">
 			<!-- Modal coleccion -->
 			<div class="modal-content">
-				<h4>Nuestros Programas 2</h4>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium deserunt, hic ipsa enim esse
-					illo odit praesentium, repellendus inventore laudantium doloremque, deleniti quo laborum maiores
-					temporibus quis dolorum beatae ratione.</p>
+				<h4>colección</h4>
+				<p>Proximamente</p>
 			</div>
 			<div class="modal-footer">
 				<a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo</a>
@@ -136,9 +134,9 @@
 		<div id="modal3" class="modal modal-fixed-footer">
 			<!-- Modal Apoyanos -->
 			<div class="modal-content">
-				
+
 				<div class="row section buttonsOfHelp">
-					<!--
+
 					<div class="col s12">
 						<h4></h4>
 						<h4>Tu aporte nos mueve</h4>
@@ -151,27 +149,58 @@
 					</div>
 
 
+					<div class="col s12">
+						<ul class="collapsible">
+							<li>
+								<div class="collapsible-header">
+									<i class="material-icons">auto_stories</i>
+									Dona tu Libro
+								</div>
+								<div class="collapsible-body">
+									<p>Visitanos en la calle 119 #67 b 119 - 04
+										Las Brisas, en los dias martes a viernes en los horarios de 2pm a 6pm y has
+										entrega del material bibliografico para su revision correspondiente.</p>
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header">
+									<i class="material-icons">emoji_people</i>
+									Comparte Tu Talento
+								</div>
+								<div class="collapsible-body">
+									<p>La biblioteca comunitaria brisas del norte te invita a desarrollar procesos
+										educativos, pedagógicos, formación de lectores, lectoescritura y creación de
+										laboratorios, los cuales podrán ser brindados a la comunidad desde tu aporte
+										social. Para mayor información puedes acercarte a nuestra sede. Con gusto serás
+										bienvenido.</p>
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header">
+									<i class="material-icons">attach_money</i>
+									Donar dinero
+								</div>
+								<div class="collapsible-body">
+									<p>Datos cuenta</p>
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header">
+									<i class="material-icons">personal_video</i>
+									Recurso materiales u otros activos
+								</div>
+								<div class="collapsible-body">
+									<p>Para mayor información puedes acercarte a nuestra sede. Con gusto serás
+										bienvenido, visitanos en la calle 119 #67 b 119 - 04
+										Las Brisas</p>
+								</div>
+							</li>
+						</ul>
+					</div>
 
-					<div class="col s3 center section">
-						<a href="" class="button ">Dona tu Libro</a>
-					</div>
-					<div class="col s3 center  section">
-						<a href="" class="button ">Comparte Tu Talento</a>
-					</div>
-					<div class="col s3 center section">
-						<a href="" class="button ">Donar dinero<i class="material-icons">attach_money</i></a>
-					</div>
-					<div class="col s3 center section">
-						<a href="" class="button ">Recurso materiales u otros activos</a>
-					</div>
-					-->
-					<div class="container section"></div>
-					<div class="container section">
-						<h1>Proximamente</h1>
-					</div>
 				</div>
-				
-					
+
+
 			</div>
 			<div class="modal-footer">
 				<a href="#!" class="modal-close waves-effect waves-green btn-flat">Listo</a>
@@ -186,7 +215,7 @@
 					<div class="card">
 						<div class="card-content z-depth-2">
 							<div class="row valign-wrapper">
-								
+
 								<div class="col s8">
 									<h3 class="titliOfCards">Quienes Somos</h3>
 
@@ -336,6 +365,9 @@
 				var elems = document.querySelectorAll('.slider');
 				var instances = M.Slider.init(elems);
 
+				var elemsToo = document.querySelectorAll('.tap-target');
+				var instancesToo = M.TapTarget.init(elemsToo);
+
 				var elementOne = document.querySelectorAll('#slider2');
 				var instanceOfElement = M.Slider.init(elementOne, {
 					indicators: false
@@ -346,12 +378,6 @@
 
 			});
 		</script>
-
-
-
-
-
-
 
 </body>
 

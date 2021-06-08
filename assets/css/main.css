@@ -167,6 +167,7 @@ ol, ul {
 .nav-wrapper{
 	display: flex;
 	justify-content: center;
+	background-color: #008394;
 }
 
 blockquote, q {
@@ -337,14 +338,11 @@ input, select, textarea {
 	.tree-buttons{
 		width: 100%;
 		height: 100%;
-		
+		background-color: #8ab200 !important;
 		
 	}
-	
 
-	.geral-div-boddy{
-			
-	}
+	
 	.cardUno{
 		display: flex;
 		justify-content: center;
