@@ -108,6 +108,24 @@ font-weight: bolder !important;
 }
 /* Fin  */
 
+.imagesMont{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	
+}
+.imagesMont img{
+	width: 90%;
+  	height: auto;
+	margin-bottom: 15px;
+	
+}
+.imagesMont > div{
+	width: 50%;
+	position: relative;
+	
+
+}
 
 
 
