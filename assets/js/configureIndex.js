@@ -20,7 +20,7 @@ async function inicio() {
           configuracionBar1 = jsonConfigure.banner1;
           configuracionBar2 = jsonConfigure.banner2;
           loadConfiguration("containerBanner","estructureCard",configuracionBar1);
-          debugger
+          
          loadConfiguration("containerBanner2","estructureCard-2",configuracionBar2);
        })
        .catch(error => console.error('Error:', error));
