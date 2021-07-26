@@ -94,7 +94,7 @@
 							class="waves-effect waves-light button large tree-buttons hoverable">Programas</a>
 					</div>
 					<div class="col s4  center buttons-center "><a href="BrisasEnAccion.html"
-							class="waves-effect waves-light button large tree-buttons hoverable ">Brisas en accion</a>
+							class="waves-effect waves-light button large tree-buttons hoverable ">Brisas en acción</a>
 					</div>
 					<div class="col s4  center buttons-center"><a href="servicios.html"
 							class="waves-effect waves-light button large  tree-buttons hoverable ">Servicios</a>
@@ -139,11 +139,7 @@
 					<div class="col s12">
 						<h4></h4>
 						<h4>Tu aporte nos mueve</h4>
-						<p>Para nosostros es de gran importancia el que puedas apoyarnos, para esto tenemos tres formas
-							en
-							las
-							que
-							puedes ayudar; A traves de: aportes economicos, talento humano o material bibliografico(Que
+						<p>Para nosostros es de gran importancia el que puedas apoyarnos a traves de: aportes economicos, talento humano o material bibliografico(Que
 							se encuentren en optimo estado o nuevos)</p>
 					</div>
 
@@ -399,15 +395,17 @@
 		<script>
 			document.addEventListener('DOMContentLoaded', async function () {
 				await inicio();
+				let options = {interval:10000};
 				var elems = document.querySelectorAll('.slider');
-				var instances = M.Slider.init(elems);
+				var instances = M.Slider.init(elems, options );
 
 				var elemsToo = document.querySelectorAll('.tap-target');
 				var instancesToo = M.TapTarget.init(elemsToo);
 
 				var elementOne = document.querySelectorAll('#slider2');
 				var instanceOfElement = M.Slider.init(elementOne, {
-					indicators: false
+					indicators: false,
+					interval:10000
 				});
 				M.AutoInit();
 
